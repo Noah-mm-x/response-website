@@ -1,0 +1,177 @@
+@mainColors: #ff1f2d;
+@mainFontColors: #2e2e2e;
+@footerContentBgColors: #f5f5f5;
+//  按钮划入效果
+.gradually-change-color(@duration:.3s) {
+  transition: all @duration;
+  -webkit-transition: all @duration;
+  -moz-transition: all @duration;
+  -o-transition: all @duration;
+}
+
+html {
+  font-size: 62.5%;
+  .force-float-right {
+    float: right !important;
+  }
+
+  .force-padding-left {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .border-bottom-dotted {
+    border-bottom: 1px dotted #f5f5f5;
+  }
+
+}
+
+header {
+  #logo {
+    width: 100%;
+    background: @mainColors;
+    h1,h3,p{
+      margin-left: 1rem;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
+    @media (max-width: 991px) {
+      text-align: center;
+    }
+  }
+
+  #logo:hover {
+    background: #ffac31;
+  }
+
+  .logo-father {
+    padding: 0;
+  }
+
+  #nav-largeScreen {
+    margin-top: 100px;
+    a {
+      display: block;
+      text-align: center;
+      color: @mainFontColors;
+    }
+    .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+      color: white;
+      background: @mainColors;
+    }
+    .nav > li > a:hover, .nav > li > a:focus {
+      color: white;
+      background: @mainColors;
+    }
+    li {
+      padding-left: 1rem;
+      width: 19%;
+    }
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+
+  #free {
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+
+  #signIn {
+    a {
+      color: @mainFontColors;
+    }
+    a:hover {
+      background: transparent;
+    }
+    li:nth-child(2) {
+      line-height: 38px;
+    }
+  }
+
+  #nav-smallScreen {
+    li {
+      display: block;
+    }
+  }
+
+  #nav-button-smallScreen, #nav-smallScreen {
+    @media (min-width: 990px) {
+      display: none;
+    }
+  }
+
+}
+
+hr {
+  margin-left: -15px;
+  border-top: 2px solid @mainColors;
+}
+
+footer {
+  margin-top: 40px;
+  background: #fafafa;
+  .footer-logo {
+    a {
+      text-decoration: none;
+      h1 {
+        font-size: 2.5rem;
+        color: @mainColors;
+      }
+      p {
+        font-size: 1rem;
+        color: @mainFontColors;
+      }
+    }
+    @media (max-width: 751px) {
+      display: none;
+    }
+  }
+  .footer-nav {
+    h5 {
+      font-weight: bolder;
+      color: @mainFontColors;
+    }
+    ul li {
+      border-radius: 5px;
+      background: @footerContentBgColors;
+    }
+    ul li a:hover {
+      background: @mainColors;
+      color: white;
+    }
+    ul li a {
+      padding-left: 5px;
+      color: @mainFontColors;
+      .gradually-change-color;
+    }
+  }
+  #footer-hr {
+    border-top: 1px solid @footerContentBgColors;
+  }
+  .footer-bottom {
+    margin-bottom: 20px;
+  }
+  .footer-bottom span {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+}
+
+#back-top {
+  width: 48px;
+  height: 49px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: url("../images/top.png") no-repeat 0 0;
+  opacity: .8;
+}
+
+#back-top:hover {
+  background: url("../images/top.png") no-repeat -48px 0;
+}

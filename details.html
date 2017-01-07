@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <title>详情页</title>
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/css/bootstrap-theme.min.css">
+    <link rel="stylesheet/less" href="css/base.less">
+    <link rel="stylesheet/less" href="css/details.less">
+    <script src="lib/js/jquery-1.10.2.min.js"></script>
+    <script src="lib/js/bootstrap.min.js"></script>
+    <script src="lib/js/less.min.js"></script>
+    <script src="js/rewriteGet.js"></script>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="row">
+            <div class="col-md-3 col-xs-12 logo-father">
+                <div id="logo">
+                    <a href="#">
+                        <h1>Responsive</h1>
+                        <h3>China</h3>
+                        <p>中国响应式网站分享平台</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-6">
+                <nav id="nav-largeScreen">
+                    <ul class="nav nav-pills " role="tablist">
+                        <li class="active"><a href="#">首页</a></li>
+                        <li><a href="#">国内</a></li>
+                        <li><a href="#">国外</a></li>
+                        <li><a href="#">分享</a></li>
+                        <li><a href="#">参考</a></li>
+                    </ul>
+                </nav>
+                <nav class="navbar-header" id="nav-button-smallScreen">
+                    <button type="button" class="btn btn-danger collapsed glyphicon glyphicon-align-justify navbar-left"
+                            data-toggle="collapse" data-target="#nav-smallScreen"></button>
+                </nav>
+                <nav id="nav-smallScreen" class="collapse">
+                    <ul class="nav navbar-nav" role="tablist">
+                        <li class="active"><a href="#">首页</a></li>
+                        <li><a href="#">国内</a></li>
+                        <li><a href="#">国外</a></li>
+                        <li><a href="#">分享</a></li>
+                        <li><a href="#">参考</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <ul id="signIn" class="nav nav-pills force-float-right" role="tablist">
+                    <li><a href="#">登录</a></li>
+                    <li>|</li>
+                    <li><a href="#">注册</a></li>
+                </ul>
+                <img id="free" src="images/zhuzi-ad.jpg" class="img-responsive navbar-right" alt="">
+            </div>
+        </div>
+    </header>
+
+    <hr>
+    <main>
+    </main>
+</div>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 footer-logo">
+                <a href="#">
+                    <h1>Responsive.cn</h1>
+                    <p>中国响应式网站分享平台</p>
+                </a>
+            </div>
+            <div class="col-sm-3  border-bottom-dotted footer-nav">
+                <h5>关于ABOUT</h5>
+                <ul class="nav nav-pills nav-stacked" role="tablist">
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">建议</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3  border-bottom-dotted footer-nav">
+                <h5>链接LINKS</h5>
+                <ul class="nav nav-pills nav-stacked" role="tablist">
+                    <li><a href="#">友情链接</a></li>
+                    <li><a href="#">合作相关</a></li>
+                    <li><a href="#">网友评价</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3 border-bottom-dotted footer-nav">
+                <h5>推荐 RECOMMEND</h5>
+                <a href="#"><img src="images/aliyun.jpg" class="img-responsive" alt=""></a>
+            </div>
+        </div>
+        <hr id="footer-hr">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-sm-offset-3 footer-bottom">
+                <span>Copyright©2013 responsive.cn All Rights Reserved 中国响应式网站分享平台 沪ICP备13028495号 </span>
+                <img src="images/pic.gif" title="站长统计" alt="">
+            </div>
+        </div>
+    </div>
+
+</footer>
+<div id="back-top" title="返回顶部">
+</div>
+<script src="js/details.js"></script>
+<script src="js/toTop.js"></script>
+</body>
+</html>

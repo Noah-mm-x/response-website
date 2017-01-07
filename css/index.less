@@ -1,0 +1,94 @@
+@mainColors: #ff1f2d;
+@mainFontColors: #2e2e2e;
+@footerContentBgColors: #f5f5f5;
+.force-float-right {
+  float: right !important;
+}
+
+.force-padding-left {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.border-bottom-dotted {
+  border-bottom: 1px dotted #f5f5f5;
+}
+
+.gradually-change-color(@duration:.5s) {
+  transition: all @duration;
+  -webkit-transition: all @duration;
+  -moz-transition: all @duration;
+  -o-transition: all @duration;
+}
+
+main {
+  .row-margin-top {
+    margin-top: 25px;
+  }
+  a {
+    color: @mainFontColors;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    @media (max-width: 990px) {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: @mainColors;
+  }
+
+  .main-show div {
+    padding-right: 0;
+  }
+
+  .main-show img {
+    width: 97%;
+    height: 25rem;
+  }
+
+  .main-show img:hover {
+    transform: translateY(-10px);
+    transition-duration: 0.5s;
+    box-shadow: 0 0 10px #000000;
+  }
+  .empty {
+    font-size: 4.8rem;
+    text-align: center;
+  }
+}
+
+#paging {
+  margin: 30px auto;
+  #paging-previous {
+    margin-left: 40%;
+  }
+  #paging-num {
+    float: left;
+    font-size: 2rem;
+    line-height: 4rem;
+    margin-left: 2rem;
+  }
+  #paging-next {
+    margin-left: 2rem;
+  }
+  #paging-next, #paging-previous {
+    float: left;
+    width: 78px;
+    height: 47px;
+    border: 1px solid @footerContentBgColors;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 47px;
+    font-size: 1.2rem;
+    .gradually-change-color;
+  }
+
+  #paging-next:hover, #paging-previous:hover {
+    color: white;
+    background: @mainColors;
+  }
+}
+
